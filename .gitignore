@@ -1,0 +1,36 @@
+public class  app
+{
+  public static void main(String args[])
+  {
+    myJFrame mjf = new myJFrame();
+  }
+}
+
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.BoxLayout;
+public class myJFrame extends JFrame
+{
+	public myJFrame ()
+	{
+           
+            JFrame frame = new JFrame("Team 5 Game");
+            setLayout(new BoxLayout(getContentPane(), BoxLayout.LINE_AXIS)); 
+            setDefaultCloseOperation(EXIT_ON_CLOSE);
+            JLabel gameName= new JLabel("Welcome to Team 5's Game!");
+            JLabel teamMem= new JLabel ("Created by: Alexandra Desir, Amber Harris, Shadia Maurtua, Soren Diehl");
+            JButton start= new JButton ("Click to Start!");
+            JButton instructions= new JButton ("How to play");
+          
+            add(gameName);
+            add(start);
+            add(instructions);
+            add(teamMem);
+           
+            
+            setSize (800, 250);
+            setVisible(true);
+	}
+
+   
+}
